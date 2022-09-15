@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dad Joke View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DadJokeViewController" customModule="iDadJoke" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-z2-XNY" customClass="PunchlineView">
+                                <rect key="frame" x="10" y="230" width="394" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7i-mw-Jox">
+                                        <rect key="frame" x="10" y="10" width="374" height="280"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Here's your daily dose of dad jokes.">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="SFProText-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="K7i-mw-Jox" firstAttribute="leading" secondItem="P3R-z2-XNY" secondAttribute="leading" constant="10" id="2hu-J4-f3J"/>
+                                    <constraint firstAttribute="height" constant="300" id="7XQ-BP-LZ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="K7i-mw-Jox" secondAttribute="trailing" constant="10" id="TrU-lk-SC8"/>
+                                    <constraint firstItem="K7i-mw-Jox" firstAttribute="top" secondItem="P3R-z2-XNY" secondAttribute="top" constant="10" id="cWm-qf-oFY"/>
+                                    <constraint firstAttribute="bottom" secondItem="K7i-mw-Jox" secondAttribute="bottom" constant="10" id="tFX-FU-SUW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-TF-jgZ" customClass="SetupView" customModule="iDadJoke" customModuleProvider="target">
+                                <rect key="frame" x="10" y="70" width="394" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4I-Lr-Jd1">
+                                        <rect key="frame" x="10" y="10" width="374" height="130"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Hello to the coolest cousin!">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="SFPro-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="h4I-Lr-Jd1" firstAttribute="top" secondItem="mPa-TF-jgZ" secondAttribute="top" constant="10" id="0w7-6B-V4B"/>
+                                    <constraint firstAttribute="bottom" secondItem="h4I-Lr-Jd1" secondAttribute="bottom" constant="10" id="ULN-Dj-SoP"/>
+                                    <constraint firstItem="h4I-Lr-Jd1" firstAttribute="leading" secondItem="mPa-TF-jgZ" secondAttribute="leading" constant="10" id="nqM-aX-sH1"/>
+                                    <constraint firstAttribute="height" constant="150" id="nti-fi-Qz6"/>
+                                    <constraint firstAttribute="trailing" secondItem="h4I-Lr-Jd1" secondAttribute="trailing" constant="10" id="rsC-Qp-f1r"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeH-Cp-R5n">
+                                <rect key="frame" x="10" y="540" width="394" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iH2-Kf-XQh"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" cornerStyle="fixed">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Make Me Laugh">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeMeLaughTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="tp5-0m-Qil"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QeH-Cp-R5n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0pm-f5-ffO"/>
+                            <constraint firstItem="P3R-z2-XNY" firstAttribute="top" secondItem="mPa-TF-jgZ" secondAttribute="bottom" constant="10" id="5TB-uG-HJE"/>
+                            <constraint firstItem="mPa-TF-jgZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="76F-r4-69j"/>
+                            <constraint firstItem="P3R-z2-XNY" firstAttribute="top" secondItem="mPa-TF-jgZ" secondAttribute="bottom" constant="10" id="FCJ-1K-ygO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P3R-z2-XNY" secondAttribute="trailing" constant="10" id="LuW-jY-fPR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QeH-Cp-R5n" secondAttribute="trailing" constant="10" id="PnM-LX-K7q"/>
+                            <constraint firstItem="QeH-Cp-R5n" firstAttribute="top" secondItem="P3R-z2-XNY" secondAttribute="bottom" constant="10" id="RPd-Ei-Sfe"/>
+                            <constraint firstItem="P3R-z2-XNY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ip5-vJ-nsM"/>
+                            <constraint firstItem="mPa-TF-jgZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="luA-9o-EgU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mPa-TF-jgZ" secondAttribute="trailing" constant="10" id="y1h-fn-YK9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="laughBtn" destination="QeH-Cp-R5n" id="bkT-rV-Sbn"/>
+                        <outlet property="punchlineLabel" destination="K7i-mw-Jox" id="YBh-JH-uU0"/>
+                        <outlet property="setupLabel" destination="h4I-Lr-Jd1" id="BYv-ip-Glk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.92941176470588238" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BackgroundColor">
+            <color red="0.83921568627450982" green="0.80000000000000004" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
